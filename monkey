@@ -44,7 +44,7 @@ local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or 
 local httprequest = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
 local httpservice = game:GetService('HttpService')
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/Fr0go1/begggg/main/bunkey")()
-local win = Flux:Window("CapySploit", "Cracked by heqds#2146", Color3.fromRGB(0, 128, 0), Enum.KeyCode.RightShift)
+local win = Flux:Window("You Poor :(", "Cracked by frogo", Color3.fromRGB(0, 128, 0), Enum.KeyCode.RightShift)
 local function claimGifts()
     pcall(function()
         Players.LocalPlayer:WaitForChild("PlayerGui")
