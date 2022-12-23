@@ -877,9 +877,9 @@ end)
 
 otherTab:Line()
 
-local userProfiles = otherTab:Toggle("Account Profiles", "Use different settings on every account", settingFile ~= "plsdonategui/settings.txt", function(t)
+local userProfiles = otherTab:Toggle("Account Profiles", "Use different settings on every account", settingFile ~= "donateconfig/settings.txt", function(t)
     if settingsLock then return end
-    writefile("plsdonategui/userProfiles/toggled.txt", tostring(t))
+    writefile("donateconfig/userProfiles/toggled.txt", tostring(t))
     task.wait(1)
     Flux:closeUi()
     serverHop()
