@@ -73,23 +73,23 @@ local function claimGifts()
 end
 task.spawn(claimGifts)
 
-local settingFile = "plsdonategui/settings.txt"
+local settingFile = "donateconfig/settings.txt"
 getgenv().settings = {}
 --Load Settings
 
-if not isfolder("plsdonategui") then
-    makefolder("plsdonategui")
+if not isfolder("donateconfig") then
+    makefolder("donateconfig")
 end
-if not isfolder("plsdonategui/userProfiles") then
-    makefolder("plsdonategui/userProfiles")
+if not isfolder("donateconfig/userProfiles") then
+    makefolder("donateconfig/userProfiles")
 end
 
-if isfile("plsdonategui/userProfiles/toggled.txt") then
-    if readfile("plsdonategui/userProfiles/toggled.txt") == "true" then
-        settingFile = tostring("plsdonategui/userProfiles/".. Players.LocalPlayer.UserId.. ".txt")
+if isfile("donateconfig/userProfiles/toggled.txt") then
+    if readfile("donateconfig/userProfiles/toggled.txt") == "true" then
+        settingFile = tostring("donateconfig/userProfiles/".. Players.LocalPlayer.UserId.. ".txt")
     end
 else
-    writefile("plsdonategui/userProfiles/toggled.txt", "false")
+    writefile("donateconfig/userProfiles/toggled.txt", "false")
 end
 
 if isfile(settingFile) then
